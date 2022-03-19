@@ -1,0 +1,173 @@
+*{
+    list-style:none;
+    text-decoration: none;
+}
+body{
+    font-family: 'open sans';
+    .contenedor{
+        max-width: 1000px;
+        margin: auto;
+        .tarjeta{
+            // max-width: 1000px;
+            // margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 38px;
+            padding: 20px 5px 20px 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            .imagen{
+                overflow: hidden;
+                img{
+                height: 415px;
+                margin: auto;
+                object-fit: cover;
+                object-position: center;
+                transition: 1s;
+                box-sizing: border-box;
+                    &:hover{
+                        // -webkit-transform:scale(1.1);
+                        // transform:scale(1.1);
+                        // transition: .5s;
+                        -webkit-transform: rotateY(180deg);
+                        -webkit-transform-style: preserve-3d;
+                        transform: rotateY(180deg);
+                        transform-style: preserve-3d;
+                        transition: 1s;
+                    }
+                }
+            }
+            .rol{
+                max-width: 500px;
+                margin-left: 40px;
+                h2{
+                    color: black;
+                    font-size: 27px;
+                    margin-bottom: 8px;
+                }
+                h3{
+                    color: #f58323;
+                    font-size: 17px;
+                    margin:0px;
+                }
+                p{
+                    color: black;
+                    font-size: 16px;
+                    // width: 344px;
+                    // margin-top: 8px;
+                    // margin-bottom: 25px;
+                }
+                h5{
+                    color: grey;
+                    font-size: 16px;
+                    margin: 0px;
+                }
+                .contact{
+                    // display: flex;
+                    // flex-direction: row;
+                    // list-style: none;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        margin: 0px;
+                        padding: 0px;
+                        .fa.fa-whatsapp{
+                            display: flex;
+                            align-items: center;
+                            color: green;
+                        }
+                        li{
+                            margin: 5px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 19px;
+                            color: green;
+                            a{
+                                text-decoration: none;
+                                color:  #3E3C3C;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .contact1{
+                    margin-top: 0px;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        margin: 0px;
+                        padding: 0px;
+                        .fa.fa-whatsapp{
+                            display: flex;
+                            align-items: center;
+                            // color: orange;
+                        }
+                        li{
+                            margin: 5px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 19px;
+                            color: orange;
+                            a{
+                                text-decoration: none;
+                                color: #3E3C3C;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        .contenedor{
+            .tarjeta{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0;
+                border-radius: 28px;
+                padding: 20px 0px 20px 0px;
+                background-color:rgba(0,0,0,0.1);
+
+                .imagen{
+                    // text-align: center;
+                    width: 75%;
+                    margin: auto;
+                    img{
+                        height: 350px;
+                        // margin: auto;
+                        // width: 100%;
+                    }
+                }
+                .rol{
+                    // text-align: center;
+                    
+                    h2{
+                        font-size: 21px;
+                    }
+                    h3{
+                        font-size: 19px;
+                    }
+                    p{
+                        font-size: 15px;
+                        max-width: 350px;
+                    }
+                    .contact{
+                        font-size: 16px;
+                    }
+                    .contact1{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
